@@ -45,3 +45,8 @@ $RECYCLE.BIN/
 Session.vim
 .netrwhist
 *~
+
+##################
+#      Gen       #
+##################
+*.log

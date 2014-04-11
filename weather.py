@@ -1,5 +1,11 @@
 #!/usr/bin/python
 
+## The idea for this script was to run it on a Debian/Ubuntu server or desktop
+## environment. There are some apps you will most likely need to install for 
+## this scripty to work properly. First is easy_setup, which you will
+## use to install pip. Then with pip you will need to install twython and
+## feedparser. See http://z.umn.edu/l8a (Ubuntu) for more info.
+
 from sys import argv
 from twython import Twython ## Connect to Twitter ## NEEDED ## Install with pip
 import commands ## Call system commands ## If needed

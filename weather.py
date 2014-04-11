@@ -39,6 +39,14 @@ logging.info(temp)
 line = 'The current temp is %d' % temp
 logging.debug(line)
 
+## Tweet it!
+try: ## I don't actually know if this try/catch block will work
+    api.update_status(status = line)
+    logging.info("Succuss!")
+except:
+    logging.warn("failed")
+
+
 ## Test
 #print data['feed']['title']
 #print line

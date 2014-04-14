@@ -22,7 +22,7 @@ ACCESS_SECRET = ''
 api = Twython(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_KEY, ACCESS_SECRET)
 
 ## Logging DEBUG
-logging.basicConfig(filename='umc-weather.log', level=logging.DEBUG)
+logging.basicConfig(filename='weather.log', level=logging.DEBUG)
 
 ## Use Yahoo! weather RSS feed to get the weather
 ## SEE: https://developer.yahoo.com/weather/#request ## Yahoo! API
@@ -30,7 +30,7 @@ logging.basicConfig(filename='umc-weather.log', level=logging.DEBUG)
 
 ## Setup the RSS sting
 url = 'http://weather.yahooapis.com/forecastrss?w='
-woeid = '12782656' ## This will need to be edited to get different locations
+woeid = '12781882' ## This will need to be edited to get different locations
 rss = url + woeid ## The resulting RSS URL
 logging.info(rss) ## Doesn't hurn to log it
 data = feedparser.parse(rss)
